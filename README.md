@@ -28,7 +28,8 @@ I dont particularly care about the data at this point its about the INTEGRATION.
 supplied data. Dealing with things such as frequency of use, limits on access etc. If it is a paid provider or publicly available changes what we may or may not do in this scenario.
 "https://data.api.abs.gov.au/rest/data/ABS%2CCPI%2C1.1.0/1.115486.10..Q?format=csvfile&detail=dataonly&dimensionAtObservation=AllDimensions"
 
-Making the project more amazing will take something like Webscraping, finding a website to do that legally from!
+Making the project more amazing will take something like Webscraping, and finding a website to do that legally from! Then we can build the code to scrape that and shift it into a library for potential extra use within the business, namely for analysts to apply to others. A common practice here is to abstract the logic from python libraries into very simple to use functions to allow people to directly
+access data sources outside of the integration if analysis is wanted/warranted. 
 
 ```
 
