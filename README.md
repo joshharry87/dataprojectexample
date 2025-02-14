@@ -1,5 +1,5 @@
 # dataintegrationexample
-Example data integration
+## Example data integration
 
 
 I have created this repository to provide an example of data integration.
