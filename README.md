@@ -23,6 +23,21 @@ Appears to be a bunch of XML files from FTP
 API I found ABS has swagger making it easier to build the html needed:
 https://api.gov.au/assets/APIs/abs/DataAPI.openapi.html#/Get%20Data/GetData
 
+
+Include some GIS data within the integration. Source 3
+https://catalogue.data.wa.gov.au/dataset/mining-tenements-dmirs-003 tenement data - email sent to department for a login to access geojson
+will hunt around for other datasets, ideally i would like to work with GIS as it makes the project more interesting....
+https://neo.gsfc.nasa.gov/ nasa earth observations
+
+https://hub.arcgis.com/search - big repository of datasets
+
+
+first one that returned a geojson with some geo data in it  : 
+pending airports
+https://hub.arcgis.com/datasets/093e181579e841f39f88df8068dae331_0/explore?location=0.001937%2C-32.318315%2C0.14
+https://hub.arcgis.com/api/download/v1/items/093e181579e841f39f88df8068dae331/geojson?redirect=false&layers=0&spatialRefId=4326
+
+
 I dont particularly care about the data at this point its about the INTEGRATION. Generally speaking you will need to consult with the data provider for documentation and allowances for use of the
 supplied data. Dealing with things such as frequency of use, limits on access etc. If it is a paid provider or publicly available changes what we may or may not do in this scenario.
 "https://data.api.abs.gov.au/rest/data/ABS%2CCPI%2C1.1.0/1.115486.10..Q?format=csvfile&detail=dataonly&dimensionAtObservation=AllDimensions"
