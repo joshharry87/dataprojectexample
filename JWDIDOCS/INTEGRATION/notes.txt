@@ -1,0 +1,11 @@
+
+Setting up CICD follow Microsoft Docs for Github Actions
+https://learn.microsoft.com/en-us/azure/developer/github/deploy-to-azure
+
+
+Deploy app
+Run Entity framework
+
+Deploy functions 
+Setup triggers
+
