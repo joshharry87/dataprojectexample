@@ -13,13 +13,9 @@ ERD for the API database
 ERD for the analytics database
 
 
-Library setup for analysts code
+setup dev environment mapped to local docker container deployment of mssql
 
-
-Scaffold API - library
-
-
-Lib for CICD
+setup base functions for grabbing data from website
 
 
 ```
