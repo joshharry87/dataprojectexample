@@ -1,0 +1,6 @@
+# Credit: this container logic was taken from:
+ https://github.com/microsoft/mssql-docker/tree/master/windows/mssql-server-windows-developer
+
+
+To be reviewed and edited:
+https://www.sqlops.com/deploying-and-managing-sql-server-in-docker-containers/
