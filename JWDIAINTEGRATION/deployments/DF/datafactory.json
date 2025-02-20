@@ -1,0 +1,29 @@
+{
+    "type": "Microsoft.DataFactory/factories/datasets",
+    "apiVersion": "2018-06-01",
+    "name": "string",
+    "properties": {
+      "annotations": [ {} ],
+      "description": "string",
+      "folder": {
+        "name": "string"
+      },
+      "linkedServiceName": {
+        "parameters": {
+          "{customized property}": {}
+        },
+        "referenceName": "string",
+        "type": "string"
+      },
+      "parameters": {
+        "{customized property}": {
+          "defaultValue": {},
+          "type": "string"
+        }
+      },
+      "schema": {},
+      "structure": {},
+      "type": "string"
+      // For remaining properties, see Dataset objects
+    }
+  }
