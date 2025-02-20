@@ -1,6 +1,6 @@
 """Specific functions for target data
 """
-import api
+import get_api_data
 
 
 def get_cpi_data():
@@ -9,6 +9,6 @@ def get_cpi_data():
     Returns:
         Dataframe: Dataframe of the ABS CPI data
     """
-    data = api.get_dataframe_from_url("")
+    data = get_api_data.get_dataframe_from_url("")
     return data
     
