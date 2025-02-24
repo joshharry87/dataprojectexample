@@ -25,3 +25,6 @@ Can we connect this to soil/erosion datasets? are they available?
 
 ```
 https://customer.precisely.com/s/article/Open-Source-Data-Links-to-Free-Vector-Raster-datasets?language=en_US
+
+
+NASA Road data -- https://search.earthdata.nasa.gov/search/granules?p=C1000000202-SEDAC&pg[0][v]=f&g=G1419157691-SEDAC&tl=1740373853.295!3!!&lat=-11.25&long=-24.75&zoom=0
