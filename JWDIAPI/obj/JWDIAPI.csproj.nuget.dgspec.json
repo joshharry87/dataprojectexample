@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj": {}
+    "C:\\repos\\integration\\dataintegrationexample\\jwdiapi\\JWDIAPI.csproj": {}
   },
   "projects": {
-    "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj": {
+    "C:\\repos\\integration\\dataintegrationexample\\jwdiapi\\JWDIAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj",
+        "projectUniqueName": "C:\\repos\\integration\\dataintegrationexample\\jwdiapi\\JWDIAPI.csproj",
         "projectName": "JWDIAPI",
-        "projectPath": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj",
+        "projectPath": "C:\\repos\\integration\\dataintegrationexample\\jwdiapi\\JWDIAPI.csproj",
         "packagesPath": "C:\\Users\\joshc\\.nuget\\packages\\",
-        "outputPath": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\obj\\",
+        "outputPath": "C:\\repos\\integration\\dataintegrationexample\\jwdiapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\joshc\\AppData\\Roaming\\NuGet\\NuGet.Config"

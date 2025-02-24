@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XAy5Nrr3ZvI=",
+  "dgSpecHash": "fGUDV6rSc4s=",
   "success": true,
-  "projectFilePath": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj",
+  "projectFilePath": "C:\\repos\\integration\\dataintegrationexample\\jwdiapi\\JWDIAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\joshc\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\joshc\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
