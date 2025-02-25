@@ -1,4 +1,14 @@
+using JWDIADATA.Data;
+using Microsoft.EntityFrameworkCore;
+
+// Need to add a bunch of services 
+
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Add DB Context - need to add logic for Dev vs prod etc.
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

@@ -1,0 +1,8 @@
+*.dll
+*.gz
+*.cache
+*.exe
+*.pdb
+*.vsidx
+/JWDIUI/
+?Ignoring the UI for now w
