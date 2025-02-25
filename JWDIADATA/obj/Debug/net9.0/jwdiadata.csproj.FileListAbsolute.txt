@@ -1,0 +1,15 @@
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.csproj.AssemblyReference.cache
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.AssemblyInfoInputs.cache
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.AssemblyInfo.cs
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.csproj.CoreCompileInputs.cache
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.sourcelink.json
+C:\repos\integration\dataintegrationexample\jwdiadata\bin\Debug\net9.0\jwdiadata.deps.json
+C:\repos\integration\dataintegrationexample\jwdiadata\bin\Debug\net9.0\jwdiadata.runtimeconfig.json
+C:\repos\integration\dataintegrationexample\jwdiadata\bin\Debug\net9.0\jwdiadata.dll
+C:\repos\integration\dataintegrationexample\jwdiadata\bin\Debug\net9.0\jwdiadata.pdb
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.dll
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\refint\jwdiadata.dll
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.pdb
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\jwdiadata.genruntimeconfig.cache
+C:\repos\integration\dataintegrationexample\jwdiadata\obj\Debug\net9.0\ref\jwdiadata.dll
