@@ -118,7 +118,7 @@ def get_weather_data(myTimer: func.TimerRequest) -> None:
     
     data.iloc[0, 2] = 8
     
-    data.iloc[0,0] = dt.date.today() - dt.timedelta(days=1)
+    data.iloc[0,0] = dt.datetime.today() - dt.timedelta(days=1)
 
     x = 25
     for val in data.iloc[0,25:-2]:
