@@ -13,6 +13,9 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+// Abstract add services into a separate file to clean this process up
+builder.Services.AddScoped<IWeatherDataService, WeatherDataService>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

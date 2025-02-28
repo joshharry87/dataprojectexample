@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jwdiacontracts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+221b760422cd200ca84bc1624175b7a48d4b8c95")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4a5f3e1023db238893da195056d914f7f710298")]
 [assembly: System.Reflection.AssemblyProductAttribute("jwdiacontracts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jwdiacontracts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
