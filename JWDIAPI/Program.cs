@@ -1,6 +1,9 @@
 using JWDIADATA.Data;
 using JWDIACONTRACTS.Services.Weather;
 using JWDIACONTRACTS.Interfaces.Weather;
+using JWDIACONTRACTS.Interfaces.GeoSurvey;
+using JWDIACONTRACTS.Services.GeoSurvey;
+
 using Microsoft.EntityFrameworkCore;
 
 // Need to add a bunch of services 
@@ -18,6 +21,8 @@ builder.Services.AddControllersWithViews();
 
 // Abstract add services into a separate file to clean this process up
 builder.Services.AddScoped<IWeatherDataService, WeatherDataService>();
+builder.Services.AddScoped<IGeoSurveyService, GeoSurveyService>();
+
 
 var app = builder.Build();
 
