@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("JWDIAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4a5f3e1023db238893da195056d914f7f710298")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4b9dd63a1f060010412cc07c8d2170a9fd681a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("JWDIAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("JWDIAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
