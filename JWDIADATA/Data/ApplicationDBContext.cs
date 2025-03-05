@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using JWDIADATA.Data.Entities;
+using dataintegrationexample;
 
 namespace JWDIADATA.Data
 {
@@ -11,6 +12,8 @@ namespace JWDIADATA.Data
 
 		// Define DbSet properties for each entity model
 		public DbSet<WeatherDataModel> WeatherDataModels { get; set; }
+		public DbSet<GeochemSurveyDataModel> GeochemSurveyDataModels { get; set; }
+
 
 
 		protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -19,6 +22,8 @@ namespace JWDIADATA.Data
 
 			// Configure entity properties and relationships
 			modelBuilder.Entity<WeatherDataModel>().HasKey(p => p.Id);
+			modelBuilder.Entity<GeochemSurveyDataModel>().HasKey(p => p.SampleID);
+
 	
 		}
 
