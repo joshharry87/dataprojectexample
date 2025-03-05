@@ -1,6 +1,8 @@
 // Controllers/BaseApiController.cs
+
 using Microsoft.AspNetCore.Mvc;
 
+namespace JWDIAPI.Controllers;
 [ApiController]
 [Route("api/[controller]")]
 public abstract class BaseApiController : ControllerBase

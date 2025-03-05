@@ -1,4 +1,6 @@
 using JWDIADATA.Data;
+using JWDIACONTRACTS.Services.Weather;
+using JWDIACONTRACTS.Interfaces.Weather;
 using Microsoft.EntityFrameworkCore;
 
 // Need to add a bunch of services 
@@ -11,6 +13,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Add services to the container.
+// builder.Services.AddControllers()
 builder.Services.AddControllersWithViews();
 
 // Abstract add services into a separate file to clean this process up
