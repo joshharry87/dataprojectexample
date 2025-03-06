@@ -8,8 +8,8 @@
 
   
   <ItemGroup>
-    <ProjectReference Include="..\JWDIADATA\jwdiadata.csproj" />
-    <ProjectReference Include="..\JWDIACONTRACTS\jwdiacontracts.csproj" />
+    <ProjectReference Include="..\JWDIADATA\JWDIADATA.csproj" />
+    <ProjectReference Include="..\JWDIACONTRACTS\JWDIACONTRACTS.csproj" />
 
   </ItemGroup>
 
