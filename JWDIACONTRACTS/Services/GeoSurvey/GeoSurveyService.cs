@@ -1,11 +1,10 @@
 
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using JWDIADATA.Data.Entities;
 using JWDIADATA.Data;
+using JWDIACONTRACTS.DTO.GeoSurveyDTO;
 using JWDIACONTRACTS.Interfaces.GeoSurvey;
-using dataintegrationexample;
+using JWDIACONTRACTS.Mappings.GEoSurvey;
 
 
 namespace JWDIACONTRACTS.Services.GeoSurvey;
@@ -18,9 +17,11 @@ public class GeoSurveyService: IGeoSurveyService
         _context = context;
     }
 
-    public async Task<IEnumerable<GeochemSurveyDataModel>> GetAllGeoSurveyDataAsync()
+    public async Task<List<GeochemSurvey>> GetAllGeoSurveyDataAsync()
     {
-        return await _context.GeochemSurveyDataModels.ToListAsync();
+        List<GeochemSurveyDataModel> list =  await _context.GeochemSurveyDataModels.ToListAsync();
+        List<GeochemSurvey> data = list.ConvertAll(new Converter<GeochemSurveyDataModel, GeochemSurvey>(GeoSurveyMappings.GeoChemConverter));
+        return data;
     }
     
 

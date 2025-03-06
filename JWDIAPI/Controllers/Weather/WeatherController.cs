@@ -1,14 +1,10 @@
-namespace dataintegrationexample;
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using JWDIAPI.Controllers;
-using System.Threading.Tasks;
+
 using JWDIADATA.Data.Entities;
 using JWDIACONTRACTS.Interfaces.Weather;
 
 
-
+namespace JWDIAPI.Controllers.Weather;
 [Route("api/[controller]")]
 [ApiController]
 public class WeatherController : BaseApiController

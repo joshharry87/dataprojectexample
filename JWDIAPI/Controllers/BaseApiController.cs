@@ -1,5 +1,3 @@
-// Controllers/BaseApiController.cs
-
 using Microsoft.AspNetCore.Mvc;
 
 namespace JWDIAPI.Controllers;

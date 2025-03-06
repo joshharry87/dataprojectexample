@@ -1,6 +1,6 @@
 using System;
 
-namespace dataintegrationexample;
+namespace JWDIADATA.Data.Entities;
 
 public class GeochemSurveyDataModel
 {

@@ -1,12 +1,11 @@
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using dataintegrationexample;
-using JWDIADATA.Data.Entities;
+
+
+using JWDIACONTRACTS.DTO.GeoSurveyDTO;
 
 namespace JWDIACONTRACTS.Interfaces.GeoSurvey;
 
 public interface IGeoSurveyService
 {
-    Task<IEnumerable<GeochemSurveyDataModel>> GetAllGeoSurveyDataAsync();
+    Task<List<GeochemSurvey>> GetAllGeoSurveyDataAsync();
 }
 
