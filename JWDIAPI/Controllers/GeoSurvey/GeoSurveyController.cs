@@ -30,6 +30,23 @@ public class GeoSurveyController: BaseApiController
         var geoSurveyData = await _geoSurveyService.GetAllGeoSurveyDataAsync();
         return Ok(geoSurveyData);
     }
+    
+    [HttpGet]
+    public async Task<ActionResult<List<GeoChemTopElementLocations>>> GetAllGeoSurveyLocationsByElementAsync(string element){
+        
+        var geoSurveyData = await _geoSurveyService.GetAllGeoSurveyLocationsByElementAsync(element);
+        return Ok(geoSurveyData);
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<List<string>>> GetAllUniqueElementsAsync(){
+        
+        var geoSurveyData = await _geoSurveyService.GetAllUniqueElementsAsync();
+        return Ok(geoSurveyData);
+    }
+
+
+
 
     
 }

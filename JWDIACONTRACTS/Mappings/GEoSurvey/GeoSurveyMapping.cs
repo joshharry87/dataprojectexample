@@ -166,6 +166,26 @@ public class GeoSurveyMappings
         return b;
     }
 
+    public static GeoChemTopElementLocations GeoChemLocationConverter(GeochemSurveyDataModel a)
+    {
+        var b = new GeoChemTopElementLocations();
+
+            b.SampleID = a.SampleID;
+            b.Gswano = a.GSWANO;
+            b.ExtractionDate = a.Extraction_Date;
+            b.BatchNo = a.Batch_No;
+            b.DLat = a.DLat;
+            b.DLong = a.DLong;
+            b.Reliability = a.RELIABILITY;
+            b.SampleType = a.SAMPLETYPE;
+            b.Lithname = a.LITHNAME;
+            b.Sitend = a.SITENO;
+            b.allPresentElements = a.all_present_elements;
+
+        return b;
+    }
+
+
 
 
     
