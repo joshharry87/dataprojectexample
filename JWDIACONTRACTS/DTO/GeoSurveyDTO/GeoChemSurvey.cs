@@ -49,7 +49,6 @@ public class GeochemSurvey
     public decimal? IndPpm {get; set;}
     public decimal? KPpm {get; set;}
     public decimal? LaPpm {get; set;}
-    public decimal? LABnegNR_NONE {get; set;}
     public decimal? LiPpm {get; set;}
     public decimal? LuPpm {get; set;}
     public decimal? MgPpm {get; set;}

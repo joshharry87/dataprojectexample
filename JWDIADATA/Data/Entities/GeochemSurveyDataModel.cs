@@ -50,7 +50,6 @@ public class GeochemSurveyDataModel
     public decimal? Ind_ppm {get; set;}
     public decimal? K_ppm {get; set;}
     public decimal? La_ppm {get; set;}
-    public decimal? LABnegNR_NONE {get; set;}
     public decimal? Li_ppm {get; set;}
     public decimal? Lu_ppm {get; set;}
     public decimal? Mg_ppm {get; set;}
@@ -85,9 +84,6 @@ public class GeochemSurveyDataModel
     public decimal? Zn_ppm {get; set;}
     public decimal? Zr_ppm {get; set;}
 
-    public decimal? Err_143_Nd {get; set;}
-  
-    public decimal? Err_87_Sr {get; set;}
     public decimal? ppm_sum {get; set;}
     public decimal? Ag_ppm_pct {get; set;}
     public decimal? Al_ppm_pct {get; set;}

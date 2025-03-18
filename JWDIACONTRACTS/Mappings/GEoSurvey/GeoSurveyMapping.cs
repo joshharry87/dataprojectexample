@@ -61,7 +61,6 @@ public class GeoSurveyMappings
             b.IndPpm = a.Ind_ppm;
             b.KPpm = a.K_ppm;
             b.LaPpm = a.La_ppm;
-            b.LABnegNR_NONE = a.LABnegNR_NONE;
             b.LiPpm = a.Li_ppm;
             b.LuPpm = a.Lu_ppm;
             b.MgPpm = a.Mg_ppm;
