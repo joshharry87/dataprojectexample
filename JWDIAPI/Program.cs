@@ -1,9 +1,7 @@
 using JWDIADATA.Data;
-using JWDIACONTRACTS.Services.Weather;
-using JWDIACONTRACTS.Interfaces.Weather;
-using JWDIACONTRACTS.Interfaces.GeoSurvey;
-using JWDIACONTRACTS.Services.GeoSurvey;
 
+using JWDIAPI.Configurations;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 // Need to add a bunch of services 
@@ -15,13 +13,22 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+
+// Identity Configuration
+IdentityConfig.ConfigureIdentityOptions(builder.Services);
+
+
+builder.Services.AddOpenApi();
 // Add services to the container.
 // builder.Services.AddControllers()
 builder.Services.AddControllersWithViews();
 
 // Abstract add services into a separate file to clean this process up
-builder.Services.AddScoped<IWeatherDataService, WeatherDataService>();
-builder.Services.AddScoped<IGeoSurveyService, GeoSurveyService>();
+LoadServices.LoadInCustomServices(builder.Services);
+
+// builder.Services.AddScoped<IWeatherDataService, WeatherDataService>();
+// builder.Services.AddScoped<IGeoSurveyService, GeoSurveyService>();
+
 
 
 var app = builder.Build();
@@ -32,11 +39,15 @@ if (!app.Environment.IsDevelopment())
     app.UseExceptionHandler("/Home/Error");
     // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
     app.UseHsts();
+    app.MapOpenApi();
 }
+
 
 app.UseHttpsRedirection();
 app.UseRouting();
 
+// to be checked etc.
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapStaticAssets();
