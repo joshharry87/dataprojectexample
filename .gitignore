@@ -23,6 +23,7 @@
 */obj/Debug*
 **/bin/Debug/**
 **/obj/Debug/**
+**/obj/** 
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
