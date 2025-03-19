@@ -1,13 +1,19 @@
+# https://git-scm.com/docs/gitignore
+
 *.dll
 *.gz
 *.cache
 *.exe
 *.pdb
 *.vsidx
+*.AssemblyInfo.cs
 /JWDIUI/
 *appsettings.json
 ?Ignoring the UI for now w
+**/.vs/**
 
+**/bin/**
+**/obj/**
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

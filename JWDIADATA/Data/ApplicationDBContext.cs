@@ -1,10 +1,17 @@
+// https://learn.microsoft.com/en-us/aspnet/core/security/authentication/identity?view=aspnetcore-9.0&tabs=net-cli
+
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+
 using JWDIADATA.Data.Entities;
-using dataintegrationexample;
+
+
 
 namespace JWDIADATA.Data
 {
-	public class ApplicationDbContext : DbContext
+	public class ApplicationDbContext : IdentityDbContext
 	{
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
 		{

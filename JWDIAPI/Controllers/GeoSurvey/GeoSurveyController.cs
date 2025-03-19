@@ -1,11 +1,12 @@
-namespace dataintegrationexample;
-
 using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using JWDIAPI.Controllers;
-using System.Threading.Tasks;
 
 using JWDIACONTRACTS.Interfaces.GeoSurvey;
+using JWDIACONTRACTS.DTO.GeoSurveyDTO;
+
+
+
+namespace JWDIAPI.Controllers.GeoSurvey;
+
 
 [Route("api/[controller]")]
 [ApiController]
@@ -24,11 +25,28 @@ public class GeoSurveyController: BaseApiController
     // }
 
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<GeochemSurveyDataModel>>> GetAllGeoSurveyDataAsync()
+    public async Task<ActionResult<List<GeochemSurvey>>> GetAllGeoSurveyDataAsync()
     {
         var geoSurveyData = await _geoSurveyService.GetAllGeoSurveyDataAsync();
         return Ok(geoSurveyData);
     }
+    
+    [HttpGet]
+    public async Task<ActionResult<List<GeoChemTopElementLocations>>> GetAllGeoSurveyLocationsByElementAsync(string element){
+        
+        var geoSurveyData = await _geoSurveyService.GetAllGeoSurveyLocationsByElementAsync(element);
+        return Ok(geoSurveyData);
+    }
+
+    [HttpGet]
+    public async Task<ActionResult<List<string>>> GetAllUniqueElementsAsync(){
+        
+        var geoSurveyData = await _geoSurveyService.GetAllUniqueElementsAsync();
+        return Ok(geoSurveyData);
+    }
+
+
+
 
     
 }

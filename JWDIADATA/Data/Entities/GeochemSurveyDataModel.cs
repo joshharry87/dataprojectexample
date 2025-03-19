@@ -1,10 +1,10 @@
 using System;
 
-namespace dataintegrationexample;
+namespace JWDIADATA.Data.Entities;
 
 public class GeochemSurveyDataModel
 {
-    public string? SampleID {get; set;}
+    public required string SampleID {get; set;}
     public int? GSWANO {get; set;}
     public DateTime? Extraction_Date {get; set;}
     public string? Batch_No {get; set;}
@@ -50,7 +50,6 @@ public class GeochemSurveyDataModel
     public decimal? Ind_ppm {get; set;}
     public decimal? K_ppm {get; set;}
     public decimal? La_ppm {get; set;}
-    public decimal? LABnegNR_NONE {get; set;}
     public decimal? Li_ppm {get; set;}
     public decimal? Lu_ppm {get; set;}
     public decimal? Mg_ppm {get; set;}
@@ -85,9 +84,6 @@ public class GeochemSurveyDataModel
     public decimal? Zn_ppm {get; set;}
     public decimal? Zr_ppm {get; set;}
 
-    public decimal? Err_143_Nd {get; set;}
-  
-    public decimal? Err_87_Sr {get; set;}
     public decimal? ppm_sum {get; set;}
     public decimal? Ag_ppm_pct {get; set;}
     public decimal? Al_ppm_pct {get; set;}
@@ -153,7 +149,7 @@ public class GeochemSurveyDataModel
     public decimal? Yb_ppm_pct {get; set;}
     public decimal? Zn_ppm_pct {get; set;}
     public decimal? Zr_ppm_pct {get; set;}
-    public string? Top_1_Elements {get; set;}
+    public required string Top_1_Elements {get; set;}
     public string? Elements_over_10 {get; set;}
     public string? all_present_elements {get; set;}
 
