@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\jwdiapi.csproj": {}
+    "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj": {}
   },
   "projects": {
     "C:\\repos\\integration\\dataintegrationexample\\JWDIACONTRACTS\\jwdiacontracts.csproj": {
@@ -119,6 +119,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -150,12 +158,12 @@
         }
       }
     },
-    "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\jwdiapi.csproj": {
+    "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\jwdiapi.csproj",
-        "projectName": "jwdiapi",
-        "projectPath": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\jwdiapi.csproj",
+        "projectUniqueName": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj",
+        "projectName": "JWDIAPI",
+        "projectPath": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\JWDIAPI.csproj",
         "packagesPath": "C:\\Users\\joshc\\.nuget\\packages\\",
         "outputPath": "C:\\repos\\integration\\dataintegrationexample\\JWDIAPI\\obj\\",
         "projectStyle": "PackageReference",
@@ -203,6 +211,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.3.1, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[9.0.2, )"
@@ -212,6 +228,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.2, )"
+            },
+            "Scalar.AspNetCore": {
+              "target": "Package",
+              "version": "[2.0.36, )"
             }
           },
           "imports": [

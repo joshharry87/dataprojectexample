@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jwdiadata")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e4b9dd63a1f060010412cc07c8d2170a9fd681a5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84ca2d1102e6945852373fee4108aa435c75ac9a")]
 [assembly: System.Reflection.AssemblyProductAttribute("jwdiadata")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jwdiadata")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
