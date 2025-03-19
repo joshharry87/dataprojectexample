@@ -1,6 +1,14 @@
 # https://git-scm.com/docs/gitignore
 
 *.dll
+*.shp
+*.csv
+*.dbf
+*.kml
+*.prj
+*.shx
+*.editorconfig
+*.bin
 *.gz
 *.cache
 *.exe
@@ -12,8 +20,9 @@
 ?Ignoring the UI for now w
 **/.vs/**
 
-**/bin/**
-**/obj/**
+*/obj/Debug*
+**/bin/Debug/**
+**/obj/Debug/**
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
