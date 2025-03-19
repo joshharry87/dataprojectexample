@@ -24,6 +24,11 @@
 **/bin/Debug/**
 **/obj/Debug/**
 **/obj/** 
+**/JWDIAPI/obj/**
+**/JWDIACONTRACTS/obj/**
+**/JWDIADATA/obj/**
+*/obj/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
