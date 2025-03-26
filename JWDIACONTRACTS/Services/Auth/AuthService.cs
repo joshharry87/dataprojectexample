@@ -49,7 +49,7 @@ public class AuthService : IAuthService
     }
 
 
-    public async Task<string> LoginAsync (UserDTO user) {
+    public async Task<string> LoginAsync (Login userLogin) {
 
         // hash password
         // check exists

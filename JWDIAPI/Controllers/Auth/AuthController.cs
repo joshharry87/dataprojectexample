@@ -21,11 +21,17 @@ public class AuthController : BaseApiController
     {
         _authService = authService;
     }
+
+    [Route("api/[controller]/Login")]
     [HttpGet]
-    public IActionResult Get(){
-        return Ok("Im a thing");
+    public async Task<ActionResult<string>> Login(Login userLogin){
+        var result = await  _authService.LoginAsync(userLogin);
+
+        return Ok(result);
+        
     }
     
+    [Route("api/[controller]/CreateUser")]
     [HttpPost]
     public async Task<ActionResult<UserDTO>> CreateNewUser(NewUser newUser){
 

@@ -7,6 +7,6 @@ namespace JWDIACONTRACTS.Interfaces.Auth;
 public interface IAuthService
 {
     Task<UserDTO> CreateUserAsync (NewUser user);
-    Task<string> LoginAsync (UserDTO user);
+    Task<string> LoginAsync (Login userLogin);
     
 }
