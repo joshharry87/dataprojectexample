@@ -11,7 +11,7 @@ using JWDIADATA.Data.Entities;
 
 namespace JWDIADATA.Data
 {
-	public class ApplicationDbContext : IdentityDbContext
+	public class ApplicationDbContext : DbContext
 	{
 		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
 		{
@@ -20,6 +20,7 @@ namespace JWDIADATA.Data
 		// Define DbSet properties for each entity model
 		public DbSet<WeatherDataModel> WeatherDataModels { get; set; }
 		public DbSet<GeochemSurveyDataModel> GeochemSurveyDataModels { get; set; }
+		public DbSet<UserDataModel> Users { get; set; }
 
 
 
@@ -30,9 +31,11 @@ namespace JWDIADATA.Data
 			// Configure entity properties and relationships
 			modelBuilder.Entity<WeatherDataModel>().HasKey(p => p.Id);
 			modelBuilder.Entity<GeochemSurveyDataModel>().HasKey(p => p.SampleID);
+            modelBuilder.Entity<UserDataModel>().HasKey(p => p.Id);
+            modelBuilder.Entity<UserDataModel>().HasIndex(p => p.Username).IsUnique();
 
-	
-		}
+        }
+		
 
-	}
+    }
 }
