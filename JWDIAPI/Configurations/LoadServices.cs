@@ -4,6 +4,8 @@ using JWDIACONTRACTS.Interfaces.GeoSurvey;
 using JWDIACONTRACTS.Services.GeoSurvey;
 using JWDIACONTRACTS.Interfaces.Auth;
 using JWDIACONTRACTS.Services.Auth;
+using JWDIACONTRACTS.Interfaces.Admin;
+using JWDIACONTRACTS.Services.Admin;
 
 // this should self generate reading by assembly and naming conventions
 namespace JWDIAPI.Configurations
@@ -15,6 +17,8 @@ namespace JWDIAPI.Configurations
             services.AddScoped<IWeatherDataService, WeatherDataService>();
             services.AddScoped<IGeoSurveyService, GeoSurveyService>();
             services.AddScoped<IAuthService, AuthService>();
+            services.AddScoped<IAdminService, AdminService>();
+
 
         }
     }
