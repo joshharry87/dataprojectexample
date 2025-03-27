@@ -20,5 +20,7 @@ public class UserDTO
     [Required]
     [EmailAddress]
     public required string RequireUniqueEmail {get; set;}
+
+    public string Role {get; set;}
     
 }

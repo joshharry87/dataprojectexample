@@ -25,7 +25,8 @@ public class AuthService : IAuthService
         UserDataModel user = new UserDataModel(){
             Username = userIn.Username,
             Password = userIn.Password, 
-            RequireUniqueEmail = userIn.RequireUniqueEmail
+            RequireUniqueEmail = userIn.RequireUniqueEmail,
+            Role = "User"
         };
  
         // hash the password
@@ -39,7 +40,8 @@ public class AuthService : IAuthService
                 Id = user.Id,
                 Username = user.Username,
                 Password = userIn.Password, 
-                RequireUniqueEmail = userIn.RequireUniqueEmail
+                RequireUniqueEmail = userIn.RequireUniqueEmail,
+                Role = user.Role
             };
         }
         else {

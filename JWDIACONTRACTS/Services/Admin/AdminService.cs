@@ -27,6 +27,27 @@ public class AdminService: IAdminService
         return data;
     }
 
+    public async Task<UserDTO> SetRolesAsync(UserRole userRole){
+        var user = await _context.Users.FirstOrDefaultAsync(p => p.Username == userRole.Username);
+
+            if (user == null) {
+                return null;
+                }
+            else {
+                user.Role = userRole.Role;
+                _context.SaveChanges();
+                return new UserDTO() {
+                    Role = user.Role,
+                    Id = user.Id,
+                    Username = user.Username,
+                    RequireUniqueEmail = user.RequireUniqueEmail,
+                    Password = user.Password,
+                    
+                };
+
+            }
+    }
+}
 
     // manage user roles etc.. takes in username and role value then updates the role based on their username
-}
+

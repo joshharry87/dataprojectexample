@@ -21,4 +21,7 @@ public class UserDataModel
     [EmailAddress]
     public required string RequireUniqueEmail {get; set;}
 
+
+    public string Role {get; set;}
+
 }

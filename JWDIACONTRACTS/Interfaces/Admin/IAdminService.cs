@@ -5,4 +5,5 @@ namespace JWDIACONTRACTS.Interfaces.Admin;
 public interface IAdminService
 {
     Task<List<UserDTO>> GetUsersAsync();
+    Task<UserDTO> SetRolesAsync(UserRole userRole);
 }

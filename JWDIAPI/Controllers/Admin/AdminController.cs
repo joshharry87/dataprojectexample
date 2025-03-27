@@ -1,4 +1,5 @@
 
+using System;
 using Microsoft.AspNetCore.Mvc;
 
 using JWDIACONTRACTS.DTO.Auth;
@@ -25,6 +26,19 @@ public class AdminController: BaseApiController
         var result = await _adminService.GetUsersAsync();
 
         return Ok(result);
+    }
+
+    [HttpPost]
+    public async Task<ActionResult<UserDTO>> SetRole(UserRole userRole){
+
+        var result = await _adminService.SetRolesAsync(userRole);
+        if (result != null){
+            return Ok(result);
+        }
+        else{
+            return BadRequest("Invalid User");
+        }
+        
     }
 
 }
