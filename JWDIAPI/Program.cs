@@ -44,8 +44,9 @@ if (!app.Environment.IsDevelopment())
     app.MapScalarApiReference();
 }
 
-
-app.UseHttpsRedirection();
+app.MapOpenApi();
+app.MapScalarApiReference();
+// app.UseHttpsRedirection();
 app.UseRouting();
 
 // to be checked etc.
